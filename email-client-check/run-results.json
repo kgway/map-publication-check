@@ -1,0 +1,40 @@
+{
+  "environment": {
+    "os": "Windows",
+    "shell": "PowerShell",
+    "node": "v24.19.0",
+    "npm": "11.19.0",
+    "cli": "0.3.8"
+  },
+  "install": {
+    "startedAt": "2026-10-20T07:29:16.0571967Z",
+    "completedAt": "2026-10-20T07:29:23.7029384Z",
+    "command": "node ../package-tools/node_modules/npm/bin/npm-cli.js install --ignore-scripts --no-audit --no-fund --save-exact @nitrosend/cli@0.3.8 @nitrosend/sdk@0.11.2 typescript @types/node"
+  },
+  "cli": {
+    "executable": "node node_modules/@nitrosend/cli/dist/index.js",
+    "argv": [
+      "send",
+      "--to",
+      "proof@dogfood.nitrosend.net",
+      "--subject",
+      "CSV publication guide: CLI delivery check",
+      "--body",
+      "kgway is checking one transactional notification for an original CSV publication guide. This CLI delivery check needs no reply.",
+      "--idempotency-key",
+      "kgway-cli-publication-check-20261020-v1",
+      "--json"
+    ],
+    "startedAt": "2026-10-20T07:38:40.181Z",
+    "completedAt": "2026-10-20T07:38:43.062Z",
+    "exitCode": 0
+  },
+  "observed": {
+    "initially": "queued",
+    "subsequently": "sent",
+    "sentAt": "2026-10-20T07:38:42.27Z",
+    "failureCode": null
+  },
+  "installToSentMinutes": 9.44,
+  "limitation": "No inbox access was granted to the agent. Provider sent status is not independent proof of recipient inbox arrival."
+}
