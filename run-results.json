@@ -1,0 +1,40 @@
+{
+  "node": "v24.19.0",
+  "package": "mailschema@0.3.2",
+  "npm": "11.19.0",
+  "installStarted": "2026-10-20T04:23:43.0898221+00:00",
+  "validObservedAt": "2026-10-20T04:26:10.604Z",
+  "minutesUntilObservedValid": 2.4585833333333333,
+  "libraryDigest": "sha-256:d4b3e019d92e169c4e7cbc52720ca4a83d3a6594760f43a3e158f8ad72d9feab",
+  "restoredByteIdentical": true,
+  "reorderedKeysDigestStable": true,
+  "records": [
+    {
+      "label": "valid",
+      "started": "2026-10-20T04:26:07.355Z",
+      "finished": "2026-10-20T04:26:10.604Z",
+      "exitCode": 0,
+      "command": "node ../package-tools/node_modules/npm/bin/npx-cli.js --no-install mailschema@0.3.2 description description.json --contract publication-contract.json",
+      "stdout": "Valid MAP 0.3 description urn:kgway:map-publication-check:2026-10-20:csv-guide\nsha-256:d4b3e019d92e169c4e7cbc52720ca4a83d3a6594760f43a3e158f8ad72d9feab\n",
+      "stderr": ""
+    },
+    {
+      "label": "broken-restricted-without-audience",
+      "started": "2026-10-20T04:26:10.610Z",
+      "finished": "2026-10-20T04:26:14.903Z",
+      "exitCode": 1,
+      "command": "node ../package-tools/node_modules/npm/bin/npx-cli.js --no-install mailschema@0.3.2 description description.json --contract publication-contract.json",
+      "stdout": "",
+      "stderr": "/details/destinations/0: must have required property 'audience'\n/details/destinations/0: must match \"then\" schema\n"
+    },
+    {
+      "label": "restored",
+      "started": "2026-10-20T04:26:14.905Z",
+      "finished": "2026-10-20T04:26:18.746Z",
+      "exitCode": 0,
+      "command": "node ../package-tools/node_modules/npm/bin/npx-cli.js --no-install mailschema@0.3.2 description description.json --contract publication-contract.json",
+      "stdout": "Valid MAP 0.3 description urn:kgway:map-publication-check:2026-10-20:csv-guide\nsha-256:d4b3e019d92e169c4e7cbc52720ca4a83d3a6594760f43a3e158f8ad72d9feab\n",
+      "stderr": ""
+    }
+  ]
+}

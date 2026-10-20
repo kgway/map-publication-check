@@ -1,0 +1,61 @@
+{
+  "@context": "https://mailschema.org/contexts/map-0.3.jsonld",
+  "@type": "MailAction",
+  "@id": "urn:kgway:map-publication-check:2026-10-20:csv-guide",
+  "profile": "https://mailschema.org/profiles/map/0.3",
+  "type": {
+    "id": "https://mailschema.org/types/publication-approval",
+    "version": "0.1",
+    "contractDigest": "sha-256:de91a49de4cba91209be253456e7c56709791fff877a060560d4eada0cc9468c"
+  },
+  "issuedAt": "2026-10-20T04:25:38Z",
+  "expiresAt": "2026-10-21T04:25:38Z",
+  "inLanguage": "en",
+  "service": {
+    "id": "https://github.com",
+    "tenant": "https://github.com/kgway"
+  },
+  "recipient": "reviewer@example.invalid",
+  "subject": {
+    "id": "urn:kgway:csv-guide:v1",
+    "title": "Review the CSV text-identifier guide"
+  },
+  "terms": {
+    "id": "urn:kgway:csv-guide:publication-terms",
+    "version": "csv-text-identifiers-v1"
+  },
+  "details": {
+    "summary": "Publish my short note about preserving text identifiers and verifying generated metadata during CSV editing.",
+    "requester": "kgway assisted by OpenAI Codex",
+    "content": {
+      "id": "urn:kgway:csv-guide:content:v1",
+      "revision": "csv-text-identifiers-v1",
+      "digest": "sha-256:c725d040ed15bf37b3620a86aa4f83af5639d9bd578c107a26764a8876a35258",
+      "title": "Keep identifiers as text when editing CSV data"
+    },
+    "destinations": [
+      {
+        "id": "https://github.com/kgway/map-publication-check/blob/main/article.md",
+        "account": "https://github.com/kgway",
+        "visibility": "restricted"
+      }
+    ],
+    "schedule": {
+      "mode": "immediate"
+    }
+  },
+  "operations": [
+    {
+      "id": "approve"
+    },
+    {
+      "id": "decline"
+    },
+    {
+      "id": "request-changes"
+    }
+  ],
+  "human": {
+    "url": "https://github.com/kgway/map-publication-check/blob/main/article.md"
+  }
+}
